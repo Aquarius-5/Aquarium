@@ -17,8 +17,8 @@ public class Level1design extends JPanel implements KeyListener{
 	
 	Shooterlevel1 shooter = new Shooterlevel1(400, 500, "images//Shooter.png");
 	Level1[][] level1 = new Level1[2][12]; 
-	int xAxis = 0;
-	int yAxis = 0;
+	int xAxis = random1.nextInt(300);
+	int yAxis = random1.nextInt(300);
 	Bullet[] bullet = new Bullet[1000];
 	int counter = 0;
 	Drop dropper = new Drop(this, level1); 
@@ -31,7 +31,7 @@ public class Level1design extends JPanel implements KeyListener{
  		
 		for(int i = 0; i<level1.length; i++) {
 			for(int j = 0; j<level1[i].length; j++) {
-				level1[i][j]  = new Level1(xAxis + 42 , yAxis, "images//images.jpg");  // set location of 1st fish
+				llevel1[i][j]  = new Level1(xAxis  , yAxis, "images//Mother Move 1.png");  // set location of 1st fish
 				xAxis += 80;
 				
 			}
