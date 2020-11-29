@@ -22,11 +22,13 @@ public class OpenningWindow extends JPanel {
 		
 	 //Get audio
 		try {
-			File sound = new File("sounds//Openingsound.wav");
-		AudioInputStream sb = AudioSystem.getAudioInputStream(sound);
-		Clip clip = AudioSystem.getClip();
-		clip.open(sb);
-		clip.start();
+			File sound = new File("sounds//background sound.wav");
+		
+			AudioInputStream sb = AudioSystem.getAudioInputStream(sound);
+			Clip clip = AudioSystem.getClip();
+			clip.open(sb);
+			clip.start(); 
+		
 		
 	    }catch(Exception e) {System.out.println(e);}
 		
@@ -47,8 +49,16 @@ public class OpenningWindow extends JPanel {
 	
 	// Set the Background
 	public void paint(Graphics game) {
-		ImageIcon background = new ImageIcon("images//background 3.jpg"); 
-		
-		game.drawImage(background.getImage(), 0, 0, null);
+		ImageIcon background = new ImageIcon("images//open.png"); 
+		game.drawImage(background.getImage(), 0, 0, null); 
+	//Cai nay la dung de load Game nhung chua xong
+		//ImageIcon shark = new ImageIcon("images//Shark level 2.png"); 
+		/*for (int i = 300; i <= 1000; i+=50) {
+			//game.drawImage(shark.getImage(), i, 500, null);
+			//game.fillRect(i, 500, 50, 50);
+		try {
+			Thread.sleep(1000);
+        }catch (Exception e) {System.out.println(e);}
+		}*/
 	}
 }
