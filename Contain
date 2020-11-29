@@ -1,0 +1,13 @@
+# Aquarium 
+We got the idea from an air jet shooter game, but we remade it into an ocean shooter and some ideas.
+
+=> Explaination: 
+- Bullet class : declaring and setting some properties of the bullet
+- Drop (Drop2, Drop3): classes that are used to make a fish move or drop down.
+- Fire (Fire 2, Fire3): classes that are used to make bullets out the gun.
+- Level1 (Level2, Level3): classes that are used to declare each Level.
+- Level1(2,3)design: classes that are used to design and set properties, how to play...
+- ShooterLevel: class that is used to create the gun.
+- Opening Window class: used to create the opening of the game.
+- Menu Window class: create a window that contains a play, exit button.
+- Play Window class: create a window that the user can select the level to start game.
