@@ -58,7 +58,7 @@ public class MenuWindow extends JPanel implements ActionListener,KeyListener{
 	
     // Set the Background
 	public void paint(Graphics game) {
-		ImageIcon background = new ImageIcon("images//background (2).jpg"); 
+		ImageIcon background = new ImageIcon("images//menubackground.jpg"); 
 		
 		game.drawImage(background.getImage(), 0, 0, null);
 	}
