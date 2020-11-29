@@ -49,6 +49,14 @@ public class Level1design extends JPanel implements KeyListener{
 		window.setLocation(250, 20);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setVisible(true);
+		try {
+		File sound = new File("sounds//Level1Sound.wav");
+		AudioInputStream sb = AudioSystem.getAudioInputStream(sound);
+		Clip clip = AudioSystem.getClip();
+		clip.open(sb);
+		clip.start();
+		
+	    }catch(Exception e) {System.out.println(e);}
 	}
 	public void paint(Graphics a) {
 		ImageIcon background = new ImageIcon("images//level 1 fixed.png"); 
