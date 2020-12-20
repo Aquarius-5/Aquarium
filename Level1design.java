@@ -15,10 +15,10 @@ public class Level1design extends JPanel implements KeyListener{
 	
 	JFrame window = new JFrame("Aquarius - LEVEL 1 - EASY"); 
 	Random random1 = new Random();
-	Shooterlevel shooter = new Shooterlevel(400, 650, "images//Shooter.png");
-	Level1[][] level1 = new Level1[1][1];
-	int xAxis = random1.nextInt(200);
-	int yAxis = random1.nextInt(300);
+	Shooterlevel shooter = new Shooterlevel(400, 550, "images//Shooter.png");
+	Level1[][] level1 = new Level1[2][15];
+	int xAxis = 0;
+	int yAxis = 0;
 	Bullet[] bullet = new Bullet[1000];
 	int counter = 0;
 	Drop dropper = new Drop(this, level1); 
@@ -41,7 +41,7 @@ public class Level1design extends JPanel implements KeyListener{
         
         
 		for(int i = 0; i < bullet.length; i++) {
-			bullet[i] = new Bullet(470, 700, "images//bullet.jpg");
+			bullet[i] = new Bullet(470, 700, "images//bullet.png");
 		}
 
 
