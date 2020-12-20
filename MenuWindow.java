@@ -51,7 +51,7 @@ public class MenuWindow extends JPanel implements ActionListener,KeyListener{
 		// Set Window's Properties
 		window.setLocation(100, 10);
 		window.setUndecorated(true);
-		window.setSize(1300, 787);
+		window.setSize(1300, 700);
 		window.setVisible(true);	
 		
 	}
