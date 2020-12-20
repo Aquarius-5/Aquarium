@@ -16,11 +16,12 @@ public class Drop extends Thread{
 		while(level1[0][0].getyAxis() < 600) {
 		for(int i = 0; i < level1.length; i++) {
 			for(int j = 0; j < level1[i].length; j++) {
-				level1[i][j].move();
+				level1[i][j].setyAxis(level1[i][j].getyAxis() + 15);
+				System.out.println(level1[i][j].getyAxis());	
 			}
 		}
 		try{ 
-			Thread.sleep(10);
+			Thread.sleep(900);
 			
 		}catch(Exception e) {System.out.println(e);}
 
