@@ -15,7 +15,7 @@ public class Level2design extends JPanel implements KeyListener{
 	
 	JFrame window = new JFrame("Aquarius - LEVEL 2 - NORMAL"); 
 	
-	Shooterlevel shooter = new Shooterlevel(400, 650, "images//Shooter.png");
+	Shooterlevel shooter = new Shooterlevel(400, 600, "images//gun2.png");
 	Level2[][] level2 = new Level2[3][15]; 
 	Level2[][] Boss = new Level2[1][1];
 	int xAxis = 0;
@@ -33,7 +33,7 @@ public class Level2design extends JPanel implements KeyListener{
  		
 		for(int i = 0; i < Boss.length; i++) {
 			for(int j = 0; j<Boss[i].length; j++) {
-				Boss[i][j]  = new Level2(xAxis + 500 , yAxis - 150, "images//Shark Boss.png");  // set location of Boss
+				Boss[i][j]  = new Level2(xAxis + 500 , yAxis - 150, "images//Balrog.png");  // set location of Boss
 				xAxis += 70;
 				
 			}
@@ -43,7 +43,7 @@ public class Level2design extends JPanel implements KeyListener{
 		dropboss.start();
 		for(int i = 0; i<level2.length; i++) {
 			for(int j = 0; j<level2[i].length; j++) {
-				level2[i][j]  = new Level2(xAxis + 42 , yAxis, "images//Shark 2.png");  // set location of 1st fish
+				level2[i][j]  = new Level2(xAxis + 42 , yAxis, "images//Star.png");  // set location of 1st fish
 				xAxis += 70;
 				
 			}
