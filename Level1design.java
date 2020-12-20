@@ -30,7 +30,7 @@ public class Level1design extends JPanel implements KeyListener{
  		
 		for(int i = 0; i<level1.length; i++) {
 			for(int j = 0; j<level1[i].length; j++) {
-				level1[i][j]  = new Level1(xAxis  , yAxis, "images//Mother Move 1.png");
+				level1[i][j]  = new Level1(xAxis + 20 , yAxis, "images//Mother Move 1.png");
 				xAxis += 70;	
 			}
 			yAxis += 80;
