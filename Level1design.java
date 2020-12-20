@@ -15,7 +15,7 @@ public class Level1design extends JPanel implements KeyListener{
 	
 	JFrame window = new JFrame("Aquarius - LEVEL 1 - EASY"); 
 	Random random1 = new Random();
-	Shooterlevel shooter = new Shooterlevel(400, 550, "images//Shooter.png");
+	Shooterlevel shooter = new Shooterlevel(400, 550, "images//gun1.png");
 	Level1[][] level1 = new Level1[2][15];
 	int xAxis = 0;
 	int yAxis = 0;
