@@ -153,7 +153,7 @@ public class Level2design extends JPanel implements KeyListener{
 				clip.start();
 			}catch(Exception a) {System.out.println(e);} */
 			
-			bullet[counter].setxAxis(shooter.getxAxis() + 70); // set location of bullet so voi shooter  
+			bullet[counter].setxAxis(shooter.getxAxis() + 50); // set location of bullet so voi shooter  
 			Fire2 f = new Fire2(bullet[counter], this, level2, Boss);
 
 			bullet[counter].setyAxis(shooter.getyAxis() + 70);
