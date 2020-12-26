@@ -64,7 +64,7 @@ public class Level2design extends JPanel implements KeyListener{
 		window.setVisible(true);
 	}
 	public void paint(Graphics a) {
-		ImageIcon background = new ImageIcon("images//level 2.png"); 
+		ImageIcon background = new ImageIcon("images//Level 2.png"); 
 		a.drawImage(background.getImage(), 0, 0, null);
 		
 		shooter.drawshooter(a);
@@ -95,6 +95,7 @@ public class Level2design extends JPanel implements KeyListener{
 			window.dispose();
 			dropper.stop();
 			JOptionPane.showMessageDialog(null, "YOU WIN, Your score: " +(Fire2.score + Fire2.scoreboss) + "\n" + "Click OK to Next level");
+			Level3design l3 = new Level3design();
 		}
 	}
 	
