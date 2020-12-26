@@ -1,11 +1,17 @@
 package shootfeedFish;
 
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.File;
+import java.util.Random;
 
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -30,7 +36,7 @@ public class Level1design extends JPanel implements KeyListener{
  		
 		for(int i = 0; i<level1.length; i++) {
 			for(int j = 0; j<level1[i].length; j++) {
-				level1[i][j]  = new Level1(xAxis + 20 , yAxis, "images//Mother Move 1.png");
+				level1[i][j]  = new Level1(xAxis + 30 , yAxis, "images//Mother Move 1.png");
 				xAxis += 70;	
 			}
 			yAxis += 80;
@@ -59,7 +65,7 @@ public class Level1design extends JPanel implements KeyListener{
 	    }catch(Exception e) {System.out.println(e);}
 	}
 	public void paint(Graphics a) {
-		ImageIcon background = new ImageIcon("images//level 1 fixed.png"); 
+		ImageIcon background = new ImageIcon("images//Level 1.png"); 
 		a.drawImage(background.getImage(), 0, 0, null);
 		
 		shooter.drawshooter(a);
