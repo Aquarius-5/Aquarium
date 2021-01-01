@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 
 public class Level3design extends JPanel implements KeyListener{
 	
-	JFrame window = new JFrame("Aquarius - LEVEL 3 - HARD"); 
+	JFrame window = new JFrame("Aquarium - LEVEL 3 - HARD"); 
 	
 	Shooterlevel shooter = new Shooterlevel(400, 600, "images//gun3.png");
 	Level3[][] level3 = new Level3[4][15]; 
