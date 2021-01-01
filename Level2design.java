@@ -145,7 +145,7 @@ public class Level2design extends JPanel implements KeyListener{
 			}
 			this.repaint();
 		}
-		else if(e.getKeyCode() == KeyEvent.VK_SPACE) {
+		else if(e.getKeyCode() == KeyEvent.VK_H) {
 			/*try{
 				File sound = new File("sounds//Openingsound.wav");
 				AudioInputStream sb = AudioSystem.getAudioInputStream(sound);
