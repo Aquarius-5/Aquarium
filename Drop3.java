@@ -22,7 +22,7 @@ public class Drop3 extends Thread{
 				}
 			}
 			try{ 
-				Thread.sleep(750);
+				Thread.sleep(900);
 				
 			}catch(Exception e) {System.out.println(e);}
 
@@ -36,7 +36,7 @@ public class Drop3 extends Thread{
 				}
 			}
 			try{ 
-				Thread.sleep(800);
+				Thread.sleep(1000);
 				
 			}catch(Exception e) {System.out.println(e);}
 
