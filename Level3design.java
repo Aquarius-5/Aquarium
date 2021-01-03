@@ -54,7 +54,7 @@ public class Level3design extends JPanel implements KeyListener{
 		dropper.start();
 		
 		for(int i = 0; i < bullet.length; i++) {
-			bullet[i] = new Bullet(470, 700, "images//bullet.png");
+			bullet[i] = new Bullet(470, 700, "images//bullet3.png");
 		}
 
 
