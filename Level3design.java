@@ -33,7 +33,7 @@ public class Level3design extends JPanel implements KeyListener{
  		
 		for(int i = 0; i < Boss.length; i++) {
 			for(int j = 0; j<Boss[i].length; j++) {
-				Boss[i][j]  = new Level3(xAxis + 500 , yAxis - 150, "images//Balrog.png");  // set location of Boss
+				Boss[i][j]  = new Level3(xAxis + 500 , yAxis - 150, "images//MiniS.png");  // set location of Boss
 				xAxis += 70;
 				
 			}
@@ -43,7 +43,7 @@ public class Level3design extends JPanel implements KeyListener{
 		dropboss.start();
 		for(int i = 0; i<level3.length; i++) {
 			for(int j = 0; j<level3[i].length; j++) {
-				level3[i][j]  = new Level3(xAxis + 42 , yAxis, "images//Star.png");  // set location of 1st fish
+				level3[i][j]  = new Level3(xAxis +  , yAxis, "images//Santa.png");  // set location of 1st fish
 				xAxis += 70;
 				
 			}
